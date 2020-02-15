@@ -23,6 +23,9 @@ public class RecyclingBin : MonoBehaviour
         
         Debug.Log(col.gameObject.GetComponent<DragAndDrop>().dragging);
 
+        
+
+
         Destroy(col.gameObject);
     }
     
