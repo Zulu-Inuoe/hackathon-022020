@@ -40,7 +40,7 @@ public class BinManager : MonoBehaviour
             randIndex = Random.Range(0, maxIndex);
 
             tmpObj = Instantiate(bins[randIndex], this.GetComponent<Transform>());
-            tmpObj.GetComponent<Transform>().position = new Vector3(((i * 1.5f) - 2.25f), -4.5f, 0);
+            tmpObj.GetComponent<Transform>().position = new Vector3(((i * 1.42f) - 2.13f), -4f, 0);
 
             bins.RemoveAt(randIndex);
             maxIndex -= 1;
