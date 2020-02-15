@@ -36,14 +36,14 @@ public class LifeManager : MonoBehaviour
     public void LoseHealth()
     {
         if (health == 1)
-        {
-            SceneManager.LoadScene("MainMenu");
-
+        {            
             audioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
             foreach (AudioSource audioS in audioSources)
             {
                 audioS.Stop();
             }
+
+            SceneManager.LoadScene("MainMenu");
         }
 
         else if (health == 2)
