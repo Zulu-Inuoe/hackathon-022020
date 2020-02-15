@@ -24,23 +24,26 @@ public class RecyclingBin : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         //Debug.Log(col.gameObject.name);
-        
-        Debug.Log(col.gameObject.GetComponent<RecyclingItem>().ItemType);
 
-        if (BinType == col.gameObject.GetComponent<RecyclingItem>().ItemType)
+        //Debug.Log(col.gameObject.GetComponent<RecyclingItem>().ItemType);
+
+        if (col && col.gameObject && col.gameObject.GetComponent<RecyclingItem>())
         {
-            Debug.Log("SCORE!");
-            binManager.Collected(col.gameObject.GetComponent<DragAndDrop>().Timer);
-            this.GetComponent<AudioSource>().Play();
-        }
-        else
-        {
-            Life.GetComponent<LifeManager>().LoseHealth();
-            binManager.Trashed();
-        }
+            if (BinType == col.gameObject.GetComponent<RecyclingItem>().ItemType)
+            {
+                Debug.Log("SCORE!");
+                binManager.Collected(col.gameObject.GetComponent<DragAndDrop>().Timer);
+                this.GetComponent<AudioSource>().Play();
+            }
+            else
+            {
+                Life.GetComponent<LifeManager>().LoseHealth();
+                binManager.Trashed();
+            }
 
 
-        Destroy(col.gameObject);
+            Destroy(col.gameObject);
+        }
     }
     
 }
