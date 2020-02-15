@@ -17,9 +17,10 @@ public class RecyclingBin : MonoBehaviour
         
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("boom");
+        Debug.Log(col.gameObject.name);
+        Debug.Log(col.gameObject.GetComponent<DragAndDrop>().dragging);
     }
     
 }
