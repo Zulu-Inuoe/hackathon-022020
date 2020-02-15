@@ -45,6 +45,7 @@ public class LifeManager : MonoBehaviour
                 audioS.Stop();
             }
 
+            this.GetComponent<AudioSource>().Play();
             EndScreen.SetActive(true);
             Spawner.SetActive(false);
             foreach(var obj in GameObject.FindObjectsOfType<RecyclingItem>())
@@ -55,11 +56,13 @@ public class LifeManager : MonoBehaviour
 
         else if (health == 2)
         {
+            this.GetComponent<AudioSource>().Play();
             health -= 1;
             L2.GetComponent<SpriteRenderer>().color = Color.black;
         }
         else
         {
+            this.GetComponent<AudioSource>().Play();
             health -= 1;
             L3.GetComponent<SpriteRenderer>().color = Color.black;
         }
