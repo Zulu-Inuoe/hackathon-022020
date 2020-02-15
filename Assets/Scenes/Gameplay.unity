@@ -186,7 +186,7 @@ PrefabInstance:
     - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
         type: 3}
       propertyPath: DragablePrefabs.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
         type: 3}
@@ -223,6 +223,18 @@ PrefabInstance:
       propertyPath: DragablePrefabs.Array.data[5]
       value: 
       objectReference: {fileID: 7335401023181110085, guid: d43507803bd357e41ae24144a6f7a3b6,
+        type: 3}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 8161218315995318575, guid: 6936dd64093b6d34ea10011e109acb9d,
+        type: 3}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 4735869139070760981, guid: a2da8b6a5bd30f840b6b873a5d4874ce,
         type: 3}
     - target: {fileID: 8630498467958426541, guid: 35a8728924689d149b91827a21e0c954,
         type: 3}
