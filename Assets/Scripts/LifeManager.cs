@@ -45,6 +45,7 @@ public class LifeManager : MonoBehaviour
                 audioS.Stop();
             }
 
+            L1.GetComponent<SpriteRenderer>().color = Color.black;
             this.GetComponent<AudioSource>().Play();
             EndScreen.SetActive(true);
             Spawner.SetActive(false);
