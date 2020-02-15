@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class BinManager : MonoBehaviour
 {
+
+    public int Score;
+
+    public Text txt;
     public GameObject paperBin;
     public GameObject plasticBin;
     public GameObject electronicBin;
@@ -16,12 +21,12 @@ public class BinManager : MonoBehaviour
     private int randIndex;
     private int maxIndex = 4;
 
-    public int Score;
-
+   
 
     // Start is called before the first frame update
     void Start()
     {
+        txt.text = "Score : " + Score;
         bins.Add(paperBin);
         bins.Add(plasticBin);
         bins.Add(electronicBin);
@@ -48,20 +53,24 @@ public class BinManager : MonoBehaviour
 
     public void Collected(float time)
     {
-        if (time < 2.5f)
+        if (time < 1.0f)
         {
             Score += 300;
+            Debug.Log(300);
         }
-        else if (time < 3.5f)
+        else if (time < 2.5f)
         {
             Score += 200;
+            Debug.Log(200);
         }
-        else if (time < 5.0f)
+        else if (time < 4.0f || time > 4.0f)
         {
             Score += 100;
+            Debug.Log(100);
         }
+        txt.text = "Score : " + Score;
         Debug.Log(time);
-        Debug.Log(Score);
+        
     }
 
     public void Trashed()

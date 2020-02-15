@@ -13,6 +13,8 @@ public class Spawing : MonoBehaviour
     float waitTime = 3.0f;
     bool wait = true;
 
+    int count = 0;
+
     void Start()
     {
         //SpawnItem();
@@ -37,7 +39,22 @@ public class Spawing : MonoBehaviour
             if (bIsDone == false)
             {
                 SpawnItem();
-                waitTime = 3.0f;
+                count++;
+
+                if (count < 5)
+                {
+                    waitTime = 3.0f;
+                }
+                if (count > 5)
+                {
+                    waitTime = 2.0f;
+                }
+                if (count > 10)
+                {
+                    waitTime = 1.5f;
+                }
+
+
                 wait = true;
             }
         }
