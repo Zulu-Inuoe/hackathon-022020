@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RecyclingBin : MonoBehaviour
 {    
-    public int BinType = 0;
+    public int BinType;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +20,10 @@ public class RecyclingBin : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log(col.gameObject.name);
+        
         Debug.Log(col.gameObject.GetComponent<DragAndDrop>().dragging);
+
+        Destroy(col.gameObject);
     }
     
 }
