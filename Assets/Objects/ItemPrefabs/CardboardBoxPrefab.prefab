@@ -175,9 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa3239c5ff67be48b7985eb0ba9e009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Image: {fileID: 0}
+  SpriteRenderer: {fileID: 5947378409616418501}
   InitialState: {fileID: 21300000, guid: fa101514bf9b2bb4b87cd02c89edb481, type: 3}
   FinalState: {fileID: 21300000, guid: 4bcdc78bf6b27ac49ba7b156c6877d8c, type: 3}
   DragAndDrop: {fileID: 7421126400480275305}
   RecyclingItem: {fileID: 4793863729383899014}
-  FinalType: 0
+  m_RecyclingItemType: 0
