@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7e2fb12185f7442a9b9edf778cb006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paperBin: {fileID: 4465138800927843328, guid: 430cc92eff69a9c4298d29f4fe81753f,
+  paperBin: {fileID: 2172042856212264612, guid: 430cc92eff69a9c4298d29f4fe81753f,
     type: 3}
   plasticBin: {fileID: 6422658307811688329, guid: e033a5c7903e8c94bae445b86092a263,
     type: 3}
