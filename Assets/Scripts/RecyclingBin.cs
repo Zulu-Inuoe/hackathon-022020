@@ -16,4 +16,10 @@ public class RecyclingBin : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter()
+    {
+        Debug.Log("boom");
+    }
+    
 }
