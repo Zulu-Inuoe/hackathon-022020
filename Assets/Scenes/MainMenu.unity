@@ -412,6 +412,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AboutButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8362353646843339858, guid: d837c1280089c58458d8fd68de9ce662,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339860, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -577,6 +582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartButton
       objectReference: {fileID: 0}
+    - target: {fileID: 8362353646843339858, guid: d837c1280089c58458d8fd68de9ce662,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339860, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -675,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -400
+      value: -476
       objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
@@ -1081,7 +1091,7 @@ PrefabInstance:
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -800
+      value: -803
       objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}

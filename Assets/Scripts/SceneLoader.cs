@@ -7,11 +7,7 @@ public class SceneLoader : MonoBehaviour
     private AudioSource[] audioSources;
     public void LoadSceneByName(string name)
     {
-        audioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
-        foreach (AudioSource audioS in audioSources)
-        {
-            audioS.Stop();
-        }
+        
         SceneManager.LoadScene(name);
     }
 
