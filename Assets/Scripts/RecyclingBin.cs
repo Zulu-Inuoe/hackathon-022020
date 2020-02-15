@@ -5,6 +5,7 @@ using UnityEngine;
 public class RecyclingBin : MonoBehaviour
 {    
     public int BinType;
+    public GameObject Life;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,17 @@ public class RecyclingBin : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log(col.gameObject.name);
+        //Debug.Log(col.gameObject.name);
         
-        Debug.Log(col.gameObject.GetComponent<DragAndDrop>().dragging);
+        Debug.Log(col.gameObject.GetComponent<RecyclingItem>().ItemType);
 
-        
+        if (BinType == col.gameObject.GetComponent<RecyclingItem>().ItemType)
+        {
+            Debug.Log("SCORE!");
+        }
+        else
+            Life.GetComponent<LifeManager>().LoseHealth();
+            
 
 
         Destroy(col.gameObject);

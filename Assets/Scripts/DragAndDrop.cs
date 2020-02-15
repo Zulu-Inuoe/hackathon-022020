@@ -25,7 +25,7 @@ public class DragAndDrop : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("dds");
+        //Debug.Log("dds");
         distance = Vector3.Distance(transform.position, Camera.main.transform.position);
         dragging = true;
     }

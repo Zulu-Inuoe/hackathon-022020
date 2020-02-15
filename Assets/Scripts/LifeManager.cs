@@ -33,7 +33,7 @@ public class LifeManager : MonoBehaviour
         
     }
 
-    void LoseHealth()
+    public void LoseHealth()
     {
         if (health == 1)
             SceneManager.LoadScene("MainMenu");
