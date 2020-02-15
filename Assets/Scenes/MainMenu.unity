@@ -470,7 +470,7 @@ PrefabInstance:
     - target: {fileID: 8362353646843339860, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Gameplay
+      value: LoadingScreen
       objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
