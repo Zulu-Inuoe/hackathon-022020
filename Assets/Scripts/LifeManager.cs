@@ -10,7 +10,7 @@ public class LifeManager : MonoBehaviour
     private GameObject L2;
     private GameObject L3;
     private int health = 3;
-    
+    private AudioSource[] audioSources;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,16 @@ public class LifeManager : MonoBehaviour
     public void LoseHealth()
     {
         if (health == 1)
+        {
             SceneManager.LoadScene("MainMenu");
+
+            audioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+            foreach (AudioSource audioS in audioSources)
+            {
+                audioS.Stop();
+            }
+        }
+
         else if (health == 2)
         {
             health -= 1;
