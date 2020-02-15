@@ -31,6 +31,7 @@ public class RecyclingBin : MonoBehaviour
         {
             Debug.Log("SCORE!");
             binManager.Collected(col.gameObject.GetComponent<DragAndDrop>().Timer);
+            this.GetComponent<AudioSource>().Play();
         }
         else
         {
