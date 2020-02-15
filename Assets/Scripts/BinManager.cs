@@ -46,25 +46,25 @@ public class BinManager : MonoBehaviour
         
     }
 
-    void Collected(float time)
+    public void Collected(float time)
     {
-        if (time < 1.0f)
+        if (time < 2.5f)
         {
             Score += 300;
         }
-        else if (time < 2.0f)
+        else if (time < 3.5f)
         {
             Score += 200;
         }
-        else if (time < 3.0f)
+        else if (time < 5.0f)
         {
             Score += 100;
         }
-
+        Debug.Log(time);
         Debug.Log(Score);
     }
 
-    void Trashed()
+    public void Trashed()
     {
 
     }

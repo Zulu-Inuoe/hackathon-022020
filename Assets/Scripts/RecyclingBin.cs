@@ -6,10 +6,13 @@ public class RecyclingBin : MonoBehaviour
 {    
     public int BinType;
     private GameObject Life;
+
+    public BinManager binManager;
     // Start is called before the first frame update
     void Start()
     {
         Life = GameObject.Find("Lives Manager");
+        binManager = GameObject.Find("Recycling Bin Manager").GetComponent<BinManager>();
     }
 
     // Update is called once per frame
@@ -27,10 +30,13 @@ public class RecyclingBin : MonoBehaviour
         if (BinType == col.gameObject.GetComponent<RecyclingItem>().ItemType)
         {
             Debug.Log("SCORE!");
+            binManager.Collected(col.gameObject.GetComponent<DragAndDrop>().Timer);
         }
         else
+        {
             Life.GetComponent<LifeManager>().LoseHealth();
-            
+            binManager.Trashed();
+        }
 
 
         Destroy(col.gameObject);

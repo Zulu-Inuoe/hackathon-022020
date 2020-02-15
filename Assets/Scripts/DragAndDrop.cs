@@ -11,7 +11,7 @@ public class DragAndDrop : MonoBehaviour
     public bool dragging = false;
     public float distance;
 
-    float Timer = 0.0f;
+    public float Timer = 0.0f;
     bool StartTimer = true;
 
     public void OnMouseEnter()
