@@ -183,6 +183,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 716726205067495210, guid: 21eead24818f5a64d92f38ddfd36d9f2,
+        type: 3}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 7610705235772067750, guid: bb57b80b88ab2d94e8f35d838af8a463,
+        type: 3}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 4807209851558908282, guid: 8c9eab0aa7973a243a62fdc227390647,
+        type: 3}
+    - target: {fileID: 8630498467958426540, guid: 35a8728924689d149b91827a21e0c954,
+        type: 3}
+      propertyPath: DragablePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8525966194339328144, guid: eb899b6968f6981448075e6bbef914c4,
+        type: 3}
     - target: {fileID: 8630498467958426541, guid: 35a8728924689d149b91827a21e0c954,
         type: 3}
       propertyPath: m_Name

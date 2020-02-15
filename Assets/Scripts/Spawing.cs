@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawing : MonoBehaviour
 {
-    public GameObject DragablePrefab;
+    public GameObject[] DragablePrefabs;
 
     GameObject SpawnedObject;
 
@@ -46,6 +46,11 @@ public class Spawing : MonoBehaviour
     void SpawnItem()
     {
         Vector3 Offset = new Vector3(Random.Range(-1.7f, 2.3f), 0.0f, 0.0f);
-        SpawnedObject = Instantiate(DragablePrefab, transform.position + Offset, transform.rotation);
+
+        if (DragablePrefabs.Length > 0)
+        {
+            var randomNum = Random.Range(0, DragablePrefabs.Length);
+            Instantiate(DragablePrefabs[randomNum], transform.position + Offset, transform.rotation);
+        }
     }
 }
