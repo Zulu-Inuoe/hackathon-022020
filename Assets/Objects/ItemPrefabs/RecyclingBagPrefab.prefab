@@ -162,5 +162,7 @@ MonoBehaviour:
   - {fileID: 4807209851558908282, guid: 8c9eab0aa7973a243a62fdc227390647, type: 3}
   - {fileID: 8525966194339328144, guid: eb899b6968f6981448075e6bbef914c4, type: 3}
   - {fileID: 716726205067495210, guid: 21eead24818f5a64d92f38ddfd36d9f2, type: 3}
+  - {fileID: 4735869139070760981, guid: a2da8b6a5bd30f840b6b873a5d4874ce, type: 3}
+  - {fileID: 8161218315995318575, guid: 6936dd64093b6d34ea10011e109acb9d, type: 3}
   - {fileID: 8458816381597165275, guid: 5aab76c92e2c3a5438e83236e0d8ed46, type: 3}
   SpawnCount: 3
