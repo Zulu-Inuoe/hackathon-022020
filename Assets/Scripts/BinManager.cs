@@ -16,8 +16,8 @@ public class BinManager : MonoBehaviour
     private int randIndex;
     private int maxIndex = 4;
 
-    
-    
+    public int Score;
+
 
     // Start is called before the first frame update
     void Start()
@@ -40,14 +40,35 @@ public class BinManager : MonoBehaviour
         }
     }
 
-
-        
-        
-
-
     // Update is called once per frame
     void Update()
     {
         
     }
+
+    void Collected(float time)
+    {
+        if (time < 1.0f)
+        {
+            Score += 300;
+        }
+        else if (time < 2.0f)
+        {
+            Score += 200;
+        }
+        else if (time < 3.0f)
+        {
+            Score += 100;
+        }
+
+        Debug.Log(Score);
+    }
+
+    void Trashed()
+    {
+
+    }
+
+
+
 }

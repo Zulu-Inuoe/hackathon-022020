@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
 public class DragAndDrop : MonoBehaviour
 {
     public Color mouseOverColor = Color.blue;
@@ -47,7 +48,7 @@ public class DragAndDrop : MonoBehaviour
         if (StartTimer == true)
         {
             Timer += Time.deltaTime;
-            Debug.Log(Timer);
+           //Debug.Log(Timer);
         }
         
         
@@ -55,7 +56,6 @@ public class DragAndDrop : MonoBehaviour
 
     void Start()
     {
-        
     }
 
     
