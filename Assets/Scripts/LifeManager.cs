@@ -11,6 +11,8 @@ public class LifeManager : MonoBehaviour
     private GameObject L3;
     private int health = 3;
     private AudioSource[] audioSources;
+    public GameObject Spawner;
+    public GameObject EndScreen;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +45,12 @@ public class LifeManager : MonoBehaviour
                 audioS.Stop();
             }
 
-            SceneManager.LoadScene("MainMenu");
+            EndScreen.SetActive(true);
+            Spawner.SetActive(false);
+            foreach(var obj in GameObject.FindObjectsOfType<RecyclingItem>())
+            {
+                Destroy(obj);
+            }
         }
 
         else if (health == 2)
