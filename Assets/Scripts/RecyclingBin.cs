@@ -5,11 +5,11 @@ using UnityEngine;
 public class RecyclingBin : MonoBehaviour
 {    
     public int BinType;
-    public GameObject Life;
+    private GameObject Life;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Life = GameObject.Find("Lives Manager");
     }
 
     // Update is called once per frame

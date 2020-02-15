@@ -581,11 +581,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7e2fb12185f7442a9b9edf778cb006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paperBin: {fileID: 2172042856212264612, guid: 430cc92eff69a9c4298d29f4fe81753f,
+  paperBin: {fileID: 7139404899237063820, guid: 430cc92eff69a9c4298d29f4fe81753f,
     type: 3}
-  plasticBin: {fileID: 6665044898793994782, guid: e033a5c7903e8c94bae445b86092a263,
+  plasticBin: {fileID: 9192130515276687928, guid: e033a5c7903e8c94bae445b86092a263,
     type: 3}
-  electronicBin: {fileID: 7629268492723775881, guid: 57c77fdc2faaee8448b709d14ed362e5,
+  electronicBin: {fileID: 309518882745062635, guid: 57c77fdc2faaee8448b709d14ed362e5,
     type: 3}
-  nonrecyclableBin: {fileID: 5963011485925056511, guid: 7c723e9da06dda842bf5923f2238bc21,
+  nonrecyclableBin: {fileID: 4602466142093498266, guid: 7c723e9da06dda842bf5923f2238bc21,
     type: 3}
+  Score: 0
