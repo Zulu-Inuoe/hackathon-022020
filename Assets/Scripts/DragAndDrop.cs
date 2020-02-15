@@ -20,6 +20,9 @@ class DragAndDrop : MonoBehaviour
     public bool dragging = false;
     public float distance;
 
+    float Timer = 0.0f;
+    bool StartTimer = true;
+
     public ItemType myItem;
 
     public void OnMouseEnter()
@@ -52,6 +55,14 @@ class DragAndDrop : MonoBehaviour
             Vector3 rayPoint = ray.GetPoint(distance);
             transform.position = rayPoint;
         }
+
+        if (StartTimer == true)
+        {
+            Timer += Time.deltaTime;
+            Debug.Log(Timer);
+        }
+        
+        
     }
 
     void Start()
