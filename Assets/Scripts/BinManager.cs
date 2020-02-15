@@ -18,7 +18,7 @@ public class BinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(paperBin.transform());
+        //Instantiate(paperBin.transform());
         //bins.Add(paperBin, plasticBin, electronicBin, nonrecyclableBin);
 
         //index = (int)Random.range(0, 4);
