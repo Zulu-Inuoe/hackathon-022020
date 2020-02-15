@@ -8,6 +8,8 @@ public class TwoStateItem : MonoBehaviour
     public Sprite InitialState;
     public Sprite FinalState;
     public DragAndDrop DragAndDrop;
+    public RecyclingItem RecyclingItem;
+    public int FinalType;
 
     private bool m_IsDone;
 
@@ -25,6 +27,7 @@ public class TwoStateItem : MonoBehaviour
             m_IsDone = true;
             Image.sprite = FinalState;
             DragAndDrop.enabled = true;
+            //Recycling
         }
     }
 
