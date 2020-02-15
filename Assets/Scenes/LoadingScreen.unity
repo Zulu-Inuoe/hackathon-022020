@@ -233,8 +233,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1029269810}
-  - {fileID: 1922529132}
   - {fileID: 1727120060}
+  - {fileID: 1922529132}
   m_Father: {fileID: 414678300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -479,63 +479,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-    sodales sit amet nulla non volutpat. Sed porta ornare massa, ac iaculis diam
-    aliquet in. Vestibulum suscipit lacinia nulla, id feugiat tortor. Praesent et
-    placerat velit, eu vulputate ante. Ut sed tellus a diam tempor maximus imperdiet
-    vel mauris. Sed at erat nec elit faucibus accumsan sed a purus. Aenean dictum
-    risus neque, vitae feugiat nisi maximus et. Nulla egestas sem vitae leo malesuada
-    pellentesque.
-
-    
-
-    Praesent lectus nunc, scelerisque eget placerat et,
-    suscipit vel magna. Proin facilisis diam massa, eget tristique urna commodo sed.
-    Sed euismod neque sit amet dolor dapibus, viverra ultricies orci venenatis. Suspendisse
-    placerat purus metus, eu tincidunt dui aliquam ac. Pellentesque tempor metus
-    in suscipit sagittis. Vestibulum ante ipsum primis in faucibus orci luctus et
-    ultrices posuere cubilia Curae; Morbi nec bibendum arcu. Duis tortor nibh, porta
-    eu lacus sit amet, tincidunt aliquam dolor. Nam ullamcorper, urna id pulvinar
-    faucibus, lorem risus posuere orci, sit amet mattis nibh magna eget nisi. Aliquam
-    id imperdiet ipsum. Donec feugiat feugiat metus et volutpat. Sed elementum eros
-    ac nisl mattis ornare. Suspendisse massa dolor, pulvinar quis laoreet non, posuere
-    a lorem. Aliquam eleifend sagittis nibh eu condimentum. Maecenas ullamcorper
-    mollis pulvinar. Quisque efficitur interdum est a ullamcorper.
-
-    
-
-    Proin
-    tristique arcu et orci blandit pretium. Ut lacus ante, malesuada sit amet tellus
-    sed, ultricies vestibulum tellus. Etiam vitae quam diam. Proin venenatis ipsum
-    id mi cursus ornare. Suspendisse at nibh aliquet, porttitor leo eget, auctor
-    risus. Quisque vitae ullamcorper velit, eget sodales lacus. In in efficitur est,
-    sed feugiat augue. Ut sit amet malesuada justo, ut maximus enim. Vestibulum non
-    varius nulla. Fusce ullamcorper sem odio, sit amet molestie lacus rutrum a. Morbi
-    ut est lectus.
-
-    
-
-    Nunc consectetur erat ac tellus blandit molestie.
-    Suspendisse sed ornare tellus. Nunc quis sodales nisi. Integer ut quam ligula.
-    Sed diam leo, interdum in lorem sit amet, bibendum mattis leo. Sed eros leo,
-    congue non faucibus quis, cursus nec dolor. Nam rutrum, eros eget fermentum facilisis,
-    neque diam efficitur nunc, pharetra faucibus magna eros vitae est. Praesent feugiat
-    lobortis nisi, sit amet fermentum mauris maximus non. Nullam nec tempus est,
-    quis eleifend nibh. Praesent consectetur urna et ante tempor, ac tempus nibh
-    varius. Duis sodales, nulla vitae rutrum pretium, velit sapien tempus justo,
-    eget venenatis turpis mi sit amet ligula. Nam in nisl magna.
-
-    
-
-    Sed
-    in hendrerit purus. Praesent imperdiet turpis et egestas posuere. Sed mollis
-    eu ligula sit amet viverra. Sed porttitor mauris orci, eu faucibus tellus iaculis
-    nec. Mauris vel iaculis tortor. Fusce non arcu eu neque mollis pretium ut pretium
-    sapien. Curabitur aliquet cursus leo, in maximus dolor bibendum a. Vestibulum
-    eu libero enim. Morbi tortor lectus, sollicitudin hendrerit bibendum eu, tincidunt
-    eget nisi. Vestibulum laoreet elementum tincidunt. Fusce ut sodales ligula.'
+  m_Text: "<b>Plastic Bags</b>\n\nDid you know that you can\u2019t put plastic bags
+    into regular recycling bins? This is because some recycling facility machines
+    can\u2019t process the bags\u2019 flimsy form, not to mention, machine parts
+    can jam during the process. \r\n\nThere are special places that take plastic
+    bags, such as some grocery stores, that you can save and drop off. But usually
+    they go into landfill.\r\n\nStart using reusable bags you can purchase for around
+    10 cents each!\r\n\n<b>Cardboard Boxes</b>\n\nDon\u2019t just throw any cardboard
+    boxes into recycle. Wet or contaminated cardboard boxes (such as oily pizza boxes!)
+    are not recyclable and will be sorted out by workers anyway if found in recycle.
+    Try to save them some trouble by also breaking down boxes before recycling.\r\n\n<b>eWaste</b>\n\nDue
+    to emerging high tech products, electronic wastes are becoming one of the fastest
+    growing wastes. \r\n\nPut wires, cables, cords, rechargeable batteries in a separate
+    box and take them to your local electronic store. A popular location is Best
+    Buy where you can drop off your electronics.\r\n\n<b>Needles</b>\nNeedles and
+    other sharp objects are extremely dangerous to trash! You can go to your local
+    fire station to pick up a Sharp Box to place the sharp objects in. Once it\u2019s
+    filled up, you can return them to the same place."
 --- !u!222 &468363909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -742,7 +702,7 @@ RectTransform:
   m_Children:
   - {fileID: 468363907}
   m_Father: {fileID: 212822076}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -871,7 +831,7 @@ PrefabInstance:
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8362353646843339861, guid: d837c1280089c58458d8fd68de9ce662,
         type: 3}
