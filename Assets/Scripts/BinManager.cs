@@ -25,15 +25,7 @@ public class BinManager : MonoBehaviour
         bins.Add(paperBin);
         bins.Add(plasticBin);
         bins.Add(electronicBin);
-        bins.Add(nonrecyclableBin);
-        
-        /*
-        for (int i=0; i<4; i++)
-        {            
-            tmpObj = Instantiate(bins[i], this.GetComponent<Transform>());
-            tmpObj.GetComponent<Transform>().position = new Vector3(((i * 1.5f) - 2.25f), -4.5f, 0);
-        }     
-       */
+        bins.Add(nonrecyclableBin);        
 
        while(bins.Count > 0)
         {
