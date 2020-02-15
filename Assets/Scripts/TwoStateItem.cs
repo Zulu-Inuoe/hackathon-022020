@@ -1,34 +1,38 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 // Represents two-state items like a cardboard box that has to be 'crushed' before being put into a bin
 public class TwoStateItem : MonoBehaviour
 {
-    public Image Image;
+    public SpriteRenderer SpriteRenderer;
     public Sprite InitialState;
     public Sprite FinalState;
     public DragAndDrop DragAndDrop;
     public RecyclingItem RecyclingItem;
-    public int FinalType;
 
     private bool m_IsDone;
 
     private void Start()
     {
-        Image.sprite = InitialState;
+        SpriteRenderer.sprite = InitialState;
         DragAndDrop.enabled = false;
+        m_RecyclingItemType = RecyclingItem.ItemType;
+        // Set the type to -1 until they tap it
+        RecyclingItem.ItemType = -1;
     }
-
 
     private void OnMouseUpAsButton()
     {
         if (!m_IsDone)
         {
             m_IsDone = true;
-            Image.sprite = FinalState;
+            SpriteRenderer.sprite = FinalState;
             DragAndDrop.enabled = true;
-            //Recycling
+            //Set back the initial item type
+            RecyclingItem.ItemType = m_RecyclingItemType;
         }
     }
 
+    [SerializeField]
+    [HideInInspector]
+    private int m_RecyclingItemType;
 }
